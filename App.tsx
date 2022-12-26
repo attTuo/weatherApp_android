@@ -1,12 +1,42 @@
+import React, { useState, useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Route, Text, View } from 'react-native';
+import { BottomNavigation } from 'react-native-paper';
+import * as Location from 'expo-location';
 
-export default function App() {
-  return (
+const App : React.FC = () : React.ReactElement => {
+
+  const FrontRoute = () =>
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>FrontPage</Text>
     </View>
+  ;
+
+  const SearchRoute = () =>
+    <View style={styles.container}>
+      <Text>SeachPage</Text>
+    </View>
+  ;
+
+  const [index, setIndex] = useState<number>(0);
+  const [routes] = useState<Route[0]>([
+    { key: 'frontpage', title: 'FrontPage', focusedIcon: 'weather-partly-cloudy', unfocusedIcon: 'weather-cloudy' },
+    { key: 'search', title: 'Search', focusedIcon: 'cloud-search', unfocusedIcon: 'cloud-search-outline'}
+  ]);
+  const renderScene =  BottomNavigation.SceneMap({
+    frontpage: FrontRoute,
+    search: SearchRoute
+  });
+  
+  return (
+    <>
+      <BottomNavigation
+        navigationState={{ index , routes }}
+        onIndexChange={setIndex}
+        renderScene={renderScene}
+      />
+      <StatusBar style="auto" />
+    </>
   );
 }
 
@@ -18,3 +48,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
