@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Route, Text,TextInput, View } from 'react-native';
 import { Appbar, BottomNavigation, IconButton } from 'react-native-paper';
 import * as Location from 'expo-location';
+import { CurrentWeather, ForecastData, ForecastListItem } from './weatherDataTypes';
 
 const App : React.FC = () : React.ReactElement => {
 
