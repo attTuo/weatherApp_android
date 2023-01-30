@@ -1,5 +1,5 @@
 
-export type CurrentWeather = 
+export type weatherData = 
 {
   coord: {
     lon: number,
