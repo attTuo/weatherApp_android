@@ -1,5 +1,5 @@
 
-export type weatherData = 
+export type WeatherData = 
 {
   coord: {
     lon: number,
