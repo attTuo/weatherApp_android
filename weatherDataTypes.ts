@@ -31,7 +31,10 @@ export type WeatherData =
     gust: number
   },
   rain: {
-    oneH: number
+    "1h": number
+  },
+  snow: {
+    "1h": number
   },
   clouds: {
     all: number
@@ -88,8 +91,11 @@ export type ForecastData =
         visibility: number,
         pop: number,
         rain: {
-          threeH: number
+          "3h": number
         },
+        snow: {
+          "3h": number
+        }
         sys: {
           pod: string
         },
@@ -144,7 +150,10 @@ export type ForecastListItem = {
   visibility: number,
   pop: number,
   rain: {
-    threeH: number
+    "3h": number
+  },
+  snow: {
+    "3h": number
   },
   sys: {
     pod: string
