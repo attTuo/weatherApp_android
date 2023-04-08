@@ -6,4 +6,4 @@
 - Usability and UI
 - Working with GitHub
 
-<img alt="appImage" src="./images/weatherNow.jpg " height="300px"> <img alt="appImage2" src="./images/weatherNext.jpg " height="300px">
+<img alt="appImage" src="./images/weatherNow.jpg " height="300px"> <img alt="appImage2" src="./images/weatherNext.jpg " height="300px"> <img alt="searchWeather_1" src="./images/searchWeather_1.jpg " height="300px"> <img alt="searchWeather_2" src="./images/searchWeather_2.jpg " height="300px"> <img alt="searchBlank" src="./images/searchBlank.jpg " height="300px"> <img alt="noGps" src="./images/noGps.jpg " height="300px">
