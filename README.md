@@ -6,4 +6,4 @@
 - Usability and UI
 - Working with GitHub
 
-<img alt="appImage" src="./images/weatherNow.jpg " height="50%"> <img alt="appImage2" src="./images/weatherNext.jpg " height="50%">
+<img alt="appImage" src="./images/weatherNow.jpg " height="300px"> <img alt="appImage2" src="./images/weatherNext.jpg " height="300px">
