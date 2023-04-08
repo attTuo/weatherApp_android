@@ -8,5 +8,5 @@
 
 <img alt="appImage" src="./images/weatherNow.jpg " height="50">
 <img alt="appImage2" src="./images/weatherNext.jpg " height="50">
-![weatherImageNow](./images/weatherNow.jpg | width=50)
-![weatherImageNext](./images/weatherNext.jpg | height=100)
+![weatherImageNow](./images/weatherNow.jpg =50%x)
+![weatherImageNext](./images/weatherNext.jpg =50%x)
